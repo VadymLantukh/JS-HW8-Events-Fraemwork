@@ -87,7 +87,7 @@ ulEl.insertAdjacentHTML('beforeend', createLiEl);
 
 ulEl.addEventListener('click', event => {
   event.preventDefault();
-  if (event.target.nodeName !== 'IMG') return;
+  if (event.target === event.currentTarget) return;
   console.log(event.target);
 
   const hrefBigImg = event.target.dataset.source;
