@@ -91,10 +91,10 @@ ulEl.addEventListener('click', event => {
   console.log(event.target);
 
   const hrefBigImg = event.target.dataset.source;
-  event.target.src = hrefBigImg;
 
   const instance = basicLightbox.create(
     `<img src="${hrefBigImg}" alt="${event.target.alt}">`,
   );
+
   instance.show();
 });
