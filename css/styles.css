@@ -11,13 +11,12 @@ ol {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  min-height: auto;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
   justify-content: center;
   gap: 24px;
   padding: 24px 0 24px 0;
